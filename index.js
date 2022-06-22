@@ -54,37 +54,94 @@
     // Arithmetic Operators
 var x=34;
 var y=36;
-console.log("The value of a+b is",a+b);
-console.log("The value of a-b is",a-b);
-console.log("The value of a*b is",a*b);
-console.log("The value of a/b is",a/b);
+// console.log("The value of a+b is",a+b);
+// console.log("The value of a-b is",a-b);
+// console.log("The value of a*b is",a*b);
+// console.log("The value of a/b is",a/b);
     // Assignment Operators
 var c = y;
 // c += 2;
 // c -= 2;
 // c *= 2;
 // c /= 2;
-console.log("The value of c is",c);
+// console.log("The value of c is",c);
     // Comparison Operators
 p = 10;
 q = 20;
-console.log(x == y);
-console.log(x != y);
-console.log(x <= y);
-console.log(x >= y);
-console.log(x < y);
-console.log(x > y);
+// console.log(x == y);
+// console.log(x != y);
+// console.log(x <= y);
+// console.log(x >= y);
+// console.log(x < y);
+// console.log(x > y);
     // Logical Operators
-console.log("Logical AND");
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
-console.log("Logical OR");
-console.log(true || true);
-console.log(true || false);
-console.log(false || true);
-console.log(false || false);
-console.log("Logical NOT");
-console.log(!true);
-console.log(!false);
+// console.log("Logical AND");
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && true);
+// console.log(false && false);
+// console.log("Logical OR");
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || true);
+// console.log(false || false);
+// console.log("Logical NOT");
+// console.log(!true);
+// console.log(!false);
+
+// Funtion in JS
+function avg(a,b){
+    c = (a+b)/2;
+    return c;
+}
+c1= avg(4,6);
+console.log(c1);
+
+var arr3 = [1,2,3,4,5,6,7];
+console.log(arr3);
+// for(var i=0;i<arr.length;i++){
+//     console.log(arr3[i]);
+// }
+
+arr3.forEach(function(element){
+    console.log(element)
+})
+
+let j=0;
+while(j<arr3.length){
+    console.log(arr3[j]);
+    j++
+}
+
+// do{
+//     console.log(arr[j]);
+//     j++;
+// } while(j<arr3.length);
+
+let myArr = ["Fan","Camera",07,null,true];
+// Array Methods
+console.log(myArr.length);
+myArr.pop();
+myArr.push("Akshat");
+myArr.shift();
+myArr.sort();
+console.log(myArr);
+
+let myString = "I am Akshat, Akshat Mehta"
+// String Methods
+console.log(myString.length);
+console.log(myString.indexOf("Akshat"));
+console.log(myString.lastIndexOf("Akshat"));
+console.log(myString.slice(0,7));
+d = myString.replace("Akshat","Developer");
+console.log("Original String - ",myString);
+console.log("Replaced String - ",d);
+
+// Dates in JavaScript
+let myDate = new Date();
+console.log(myDate);
+console.log(myDate.getTime());
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+console.log(myDate.getSeconds());
