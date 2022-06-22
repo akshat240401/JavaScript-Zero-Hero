@@ -1,4 +1,4 @@
-// Print on Screen
+// Print OnScreen
 // alert('Welcome');
 document.write("Document write is written here")
 
