@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    border: 2px solid red;
+    margin: 2px;
+    background: cyan;
+    padding: 9px;
+}
+.bg-primary{
+    background: blueviolet;
+}
+.text-success{
+    color: white;
+}
+.bg-secondary{
+    background: rgb(221, 255, 0);
+}
+.other-text-success{
+    color: rgb(0, 0, 0);
+}

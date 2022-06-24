@@ -95,21 +95,21 @@ function avg(a,b){
     return c;
 }
 c1= avg(4,6);
-console.log(c1);
+// console.log(c1);
 
 var arr3 = [1,2,3,4,5,6,7];
-console.log(arr3);
+// console.log(arr3);
 // for(var i=0;i<arr.length;i++){
 //     console.log(arr3[i]);
 // }
 
 arr3.forEach(function(element){
-    console.log(element)
+    // console.log(element)
 })
 
 let j=0;
 while(j<arr3.length){
-    console.log(arr3[j]);
+    // console.log(arr3[j]);
     j++
 }
 
@@ -120,28 +120,60 @@ while(j<arr3.length){
 
 let myArr = ["Fan","Camera",07,null,true];
 // Array Methods
-console.log(myArr.length);
+// console.log(myArr.length);
 myArr.pop();
 myArr.push("Akshat");
 myArr.shift();
 myArr.sort();
-console.log(myArr);
+// console.log(myArr);
 
 let myString = "I am Akshat, Akshat Mehta"
 // String Methods
-console.log(myString.length);
-console.log(myString.indexOf("Akshat"));
-console.log(myString.lastIndexOf("Akshat"));
-console.log(myString.slice(0,7));
-d = myString.replace("Akshat","Developer");
-console.log("Original String - ",myString);
-console.log("Replaced String - ",d);
+// console.log(myString.length);
+// console.log(myString.indexOf("Akshat"));
+// console.log(myString.lastIndexOf("Akshat"));
+// console.log(myString.slice(0,7));
+// d = myString.replace("Akshat","Developer");
+// console.log("Original String - ",myString);
+// console.log("Replaced String - ",d);
 
 // Dates in JavaScript
 let myDate = new Date();
-console.log(myDate);
-console.log(myDate.getTime());
-console.log(myDate.getFullYear());
-console.log(myDate.getDay());
-console.log(myDate.getMinutes());
-console.log(myDate.getSeconds());
+// console.log(myDate);
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getSeconds());
+
+// DOM Manipulation
+let elem = document.getElementById('click');
+// console.log(elem);
+let cla = document.getElementsByClassName('container');
+// console.log(cla);
+cla[0].classList.add("bg-primary");
+cla[0].classList.add("text-success");
+// cla[1].classList.add("bg-secondary");
+// cla[1].classList.add("other-text-success");
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+// console.log(cla[0].innerHTML);
+// console.log(cla[0].innerText);
+tn = document.getElementsByTagName('div')
+console.log(tn)
+createdElement = document.createElement('p');
+createdElement.innerText = "This is new para";
+tn[0].appendChild(createdElement);
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "This is replaced element";
+tn[0].replaceChild(createdElement2, createdElement);
+// removeChild(element); ---> removes and element
+// document.title
+// document.location
+// document.scripts
+// document.links
+// document.URL
+// document.forms
+// document.domain
+// document.images
+// sel = document.querySelectorAll('.container')
