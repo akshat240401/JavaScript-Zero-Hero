@@ -177,3 +177,31 @@ tn[0].replaceChild(createdElement2, createdElement);
 // document.domain
 // document.images
 // sel = document.querySelectorAll('.container')
+
+function clicked(){
+    console.log("The Button was clicked")
+}
+window.onload = function(){
+    console.log('The document is loaded')
+}
+// Events in JavaScript
+firstcontainer.addEventListener('click', function(){
+    console.log("Clicked On Container")
+}) 
+
+firstcontainer.addEventListener('mouseover', function(){
+    console.log("Mouse on Container")
+})
+
+firstcontainer.addEventListener('mouseout', function(){
+    console.log("Mouse out of Container")
+})
+let prevHTML = document.querySelectorAll('.container')[1].innerHTML
+firstcontainer.addEventListener('mouseup', function(){
+    document.querySelectorAll('.container')[1].innerHTML= prevHTML;
+    console.log("Mouse up when released clicked on container")
+})
+firstcontainer.addEventListener('mousedown', function(){
+    document.querySelectorAll('.container')[1].innerHTML="<b>We have clicked</b>"
+    console.log("Mouse down when clicked on container")
+})
