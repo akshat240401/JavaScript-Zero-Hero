@@ -159,14 +159,14 @@ cla[0].classList.add("text-success");
 // console.log(elem.innerText);
 // console.log(cla[0].innerHTML);
 // console.log(cla[0].innerText);
-tn = document.getElementsByTagName('div')
-console.log(tn)
-createdElement = document.createElement('p');
-createdElement.innerText = "This is new para";
-tn[0].appendChild(createdElement);
-createdElement2 = document.createElement('b');
-createdElement2.innerText = "This is replaced element";
-tn[0].replaceChild(createdElement2, createdElement);
+// tn = document.getElementsByTagName('div')
+// console.log(tn)
+// createdElement = document.createElement('p');
+// createdElement.innerText = "This is new para";
+// tn[0].appendChild(createdElement);
+// createdElement2 = document.createElement('b');
+// createdElement2.innerText = "This is replaced element";
+// tn[0].replaceChild(createdElement2, createdElement);
 // removeChild(element); ---> removes and element
 // document.title
 // document.location
@@ -178,30 +178,47 @@ tn[0].replaceChild(createdElement2, createdElement);
 // document.images
 // sel = document.querySelectorAll('.container')
 
-function clicked(){
-    console.log("The Button was clicked")
-}
-window.onload = function(){
-    console.log('The document is loaded')
-}
+// function clicked(){
+//     console.log("The Button was clicked")
+// }
+// window.onload = function(){
+//     console.log('The document is loaded')
+// }
 // Events in JavaScript
-firstcontainer.addEventListener('click', function(){
-    console.log("Clicked On Container")
-}) 
+// firstcontainer.addEventListener('click', function(){
+//     console.log("Clicked On Container")
+// }) 
 
-firstcontainer.addEventListener('mouseover', function(){
-    console.log("Mouse on Container")
-})
+// firstcontainer.addEventListener('mouseover', function(){
+//     console.log("Mouse on Container")
+// })
 
-firstcontainer.addEventListener('mouseout', function(){
-    console.log("Mouse out of Container")
-})
-let prevHTML = document.querySelectorAll('.container')[1].innerHTML
-firstcontainer.addEventListener('mouseup', function(){
-    document.querySelectorAll('.container')[1].innerHTML= prevHTML;
-    console.log("Mouse up when released clicked on container")
-})
-firstcontainer.addEventListener('mousedown', function(){
-    document.querySelectorAll('.container')[1].innerHTML="<b>We have clicked</b>"
-    console.log("Mouse down when clicked on container")
-})
+// firstcontainer.addEventListener('mouseout', function(){
+//     console.log("Mouse out of Container")
+// })
+// let prevHTML = document.querySelectorAll('.container')[1].innerHTML
+// firstcontainer.addEventListener('mouseup', function(){
+//     document.querySelectorAll('.container')[1].innerHTML= prevHTML;
+//     console.log("Mouse up when released clicked on container")
+// })
+// firstcontainer.addEventListener('mousedown', function(){
+//     document.querySelectorAll('.container')[1].innerHTML="<b>We have clicked</b>"
+//     console.log("Mouse down when clicked on container")
+// })
+
+// Arrow Functions
+// function summ(a,b){
+//     return a+b;
+// }
+summ = (a,b)=>{
+    return a+b;
+}
+
+// SetTimeout and setinterval
+    // SetTimeout
+log=()=>{
+    console.log("I am delayed by 2 Seconds")
+}
+clr = setTimeout(log,2000) // 2000 milliseconds
+abc = setInterval(log,2000)
+// use clearInterval(abc)/clearTimeout(clr) to cancel setInterval/setTimeout
