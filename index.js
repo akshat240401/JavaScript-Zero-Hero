@@ -210,15 +210,31 @@ cla[0].classList.add("text-success");
 // function summ(a,b){
 //     return a+b;
 // }
-summ = (a,b)=>{
-    return a+b;
-}
+// summ = (a,b)=>{
+//     return a+b;
+// }
 
 // SetTimeout and setinterval
     // SetTimeout
-log=()=>{
-    console.log("I am delayed by 2 Seconds")
-}
-clr = setTimeout(log,2000) // 2000 milliseconds
-abc = setInterval(log,2000)
+// log=()=>{
+//     console.log("I am delayed by 2 Seconds")
+// }
+// clr = setTimeout(log,2000) // 2000 milliseconds
+// abc = setInterval(log,2000)
 // use clearInterval(abc)/clearTimeout(clr) to cancel setInterval/setTimeout
+
+// Local Storage : Used to save data in users computer in form of a string
+
+localStorage.setItem('name','Akshat') // used to store
+localStorage.getItem('name') // used to show what you stored
+localStorage.removeItem('name') // used to remove specific item
+localStorage.clear(); // used to clear entire local storage
+
+// JSON
+    // used for data transfer
+obj = {name:"Akshat", length:1, a: {hello: "hii"}}
+jso = JSON.stringify(obj);
+console.log(jso)
+    // or
+parsed = JSON.parse('{"name":"Akshat", "length":1, "a": {"hello": "hii"}}')
+console.log(parsed);
