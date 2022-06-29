@@ -1,0 +1,72 @@
+#nav{
+    border-radius: 25px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 3vh;
+}
+#img1{
+    height: 4vh;
+    width: 7.5vh;
+    margin-left: 50vh;
+}
+#img2{
+    height: 4vh;
+    width: 3.5vw;
+    margin-left: 42.5vh;
+
+}
+#img3{
+    height: 4vh;
+    width: 3.5vw;
+    margin-left: 46.7vh;
+
+}
+#img4{
+    height: 4vh;
+    width: 3.5vw;
+    margin-left: 42.5vh;
+
+}
+#jumbotron{
+    border-radius: 50px;
+}
+body{
+    background: linear-gradient(to right, rgb(195, 0, 255) , yellow);
+}
+#button {
+    border-radius: 4px;
+    background-color:gray;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    /* padding: 20px; */
+    /* width: 200px; */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+#button span:after {
+    content: '\25be';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #button:hover span {
+    padding-right: 25px;
+  }
+  
+  #button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

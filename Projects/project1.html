@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="project1.css">
     <title>MyTime</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
         <a class="navbar-brand" href="#">MyTime</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,18 +19,21 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Countries
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#"></a>
-                <a class="dropdown-item" href="#">India</a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item bg-secondary text-white">India<img src="image/ind.jpg" id="img1" alt=""></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">More to come</a>
+                <a class="dropdown-item bg-secondary text-white">NewZealand<img src="image/nz.jpg" id="img2" alt=""></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item bg-secondary text-white">England<img src="image/eng.png" id="img3" alt=""></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item bg-secondary text-white">South Africa<img src="image/sa.png" id="img4" alt=""></a>
               </div>
             </li>
           </ul>
@@ -42,12 +45,66 @@
       </nav>
 
       <div class="container">
-        <div class="jumbotron my-4">
-            <h1 class="display-4">Current Date and Time Is : <br><span id="time"></span></h1>
+        <div class="jumbotron my-4 bg-dark text-white" id="jumbotron">
+            <h3 class="display-7">Date - <span id="date"></span></h3>
+            <h1 class="display-4">Time - <span id="time"></span></h1>
             <p class="lead">We have got you covered !!!</p>
-            <hr class="my-4">
+            <hr class="my-10 bg-light">
             <p>Checkout Current Date & Time Of Various Countries</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Browse Times</a>
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="button">
+                  <span>Browse Time</span>
+                </a>
+              </p>
+              <div class="collapse bg-dark" id="collapseExample">
+                <div class="card card-body bg-dark">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header bg-secondary" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left bg-secondary text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                NewZealand
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body text-dark" id="Nz">
+                                Current Date and Time Is : <br><span id="Nztime"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header bg-secondary" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed bg-secondary text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                England
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body text-dark" id="Eng">
+                                Current Date and Time Is : <br><span id="Engtime"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header bg-secondary" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed bg-secondary text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                South Africa
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body text-dark" id="Sa">
+                                Current Date and Time Is : <br><span id="Satime"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
           </div>
       </div>
 
