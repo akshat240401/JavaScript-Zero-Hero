@@ -4,6 +4,16 @@
     margin-right: 15vw;
     margin-top: 3vh;
 }
+.about{
+  color: white;
+}
+.contact{
+  color: white;
+}
+.about-container{
+  background-color: aqua;
+  visibility: collapse;
+}
 #img1{
     height: 4vh;
     width: 7.5vh;
